@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form action="#">
+        <h1 class="mainHeading">Payment Form</h1>
+        <hr />
+        <p>required fields followed by <em class="Red"><em class="Red">*</em></em> are necessary</p>
+        <h2>Contact Information</h2>
+        <p>
+          First Name:<em class="Red"><em class="Red">*</em></em>
+          <input
+            type="text"
+                      name="fname"
+            id="fname"
+            required
+            placeholder="Mazhar"
+          />
+        </p>
+        <p>
+          Last Name:
+          <input type="text" name="lname" id="lname" placeholder="Mazhar" />
+        </p>
+        <fieldset>
+          <legend>Gender:<em class="Red">*</em></legend>
+          <p>
+            <input type="radio" id="male" name="Gender" value="male" required />
+            <label Tweaks for="male">Male</label>
+
+            <input
+              type="radio"
+              id="female"
+              name="Gender"
+              value="female"
+              required
+            />
+            <label for="female">Female</label>
+          </p>
+        </fieldset>
+
+        <p>
+          Address:<em class="Red">*</em>
+          <textarea
+            name="address"
+            id="address"
+            cols="75"
+            rows="5"
+            required
+            placeholder="your address here"
+          ></textarea>
+        </p>
+        <p>
+          Email:<em class="Red">*</em>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            required
+            placeholder="mazhar@gmail....."
+          />
+        </p>
+        <p>
+          PinCode:<em class="Red">*</em>
+          <input
+            type="number"
+            name="pincode"
+            id="pincode"
+            required
+            placeholder="1234"
+          />
+        </p>
+        <h2>Payment Information</h2>
+        <p>
+          Card Type:<em class="Red">*</em>
+          <select name="" id="" required>
+            <option value="">--Select Card Type</option>
+            <option value="PayPak">Pay Pak</option>
+            <option value="VisaCard">Visa Card</option>
+            <option value="MasterCard">Master Card</option>
+            <option value="jazzCard">jazz Card</option>
+          </select>
+        </p>
+        <p>
+          Card Number:<em class="Red">*</em>
+          <input
+            type="number"
+            name="cardNumber"
+            id="cardNumber"
+            required
+            placeholder="1234"
+          />
+        </p>
+        <p>
+          Expiration Date of Card:<em class="Red">*</em>
+          <input type="date" name="Cardexpiry" id="Cardexpiry" required />
+        </p>
+        <p>CVV:<em class="Red">*</em> <input type="password" name="CVV" id="CVV" required /></p>
+        <p>
+          <input type="submit" value="Pay Now" />
+                 <div class="reset">  <input type="reset" value="Reset the form " />
+        </div></p>
+      </form>
+    </div>
+  </body>
+</html>
